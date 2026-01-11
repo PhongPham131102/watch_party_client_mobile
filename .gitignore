@@ -10,12 +10,19 @@
 !.yarn/releases
 !.yarn/versions
 
+# Expo
+.expo/
+dist/
+web-build/
+
+# React Native
+/android/app/build/
+/android/.gradle
+/ios/Pods/
+/ios/build/
+
 # testing
 /coverage
-
-# next.js
-/.next/
-/out/
 
 # production
 /build
@@ -30,12 +37,25 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Expo CLI generated
+expo-env.d.ts
